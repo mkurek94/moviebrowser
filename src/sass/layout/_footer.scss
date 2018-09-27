@@ -1,0 +1,43 @@
+footer {
+    font-size: 1.5rem;
+    color: $color-grey-light;
+    padding: 2rem;
+
+    @include respond(tab-land) {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    @include respond(phone) {
+        padding: .5rem;
+    }
+
+    @include respond(small-phone) {
+        font-size: .5rem;
+    }
+
+    @include respond(phone-horizontal) {
+        font-size: .5rem;
+    }
+
+    img {
+        height: 1.5rem;
+        margin-left: .5rem;
+
+        @include respond(phone) {
+            height: 2rem;
+            margin-left: 30%;
+            padding: .2rem;
+        }
+
+        @include respond(mini-phone) {
+            height: 1rem;
+            margin-left: .5rem;
+        }
+
+        @include respond(phone-horizontal-small) {
+            height: 1rem;
+            margin-left: .5rem;
+        }
+    }
+}

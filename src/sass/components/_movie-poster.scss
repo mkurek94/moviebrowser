@@ -1,0 +1,113 @@
+.item {
+    width: 20rem;
+    max-height: 40rem;
+    color: $color-grey-dark;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 4rem;
+    position: relative;
+
+    @include respond(phone-horizontal) {
+        margin-bottom: 0;
+        font-size: 1.4rem;
+    }
+
+    @include respond(mini-phone) {
+        width: 15rem;
+    }
+
+    a:active,
+    a:visited,
+    a:focus,
+    a:link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .poster {
+        width: auto;
+        max-height: 28rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: .2s;
+        cursor: pointer;
+        -webkit-box-shadow: 6px 5px 23px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow: 6px 5px 23px 0px rgba(0,0,0,0.4);
+        box-shadow: 6px 5px 23px 0px rgba(0,0,0,0.4);
+
+        @include respond(phone-horizontal) {
+            max-height: 20rem;
+        }
+
+        &:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info {
+
+        @include respond(phone-horizontal-small) {
+            display: none;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: flex-end;
+            padding: .2rem;
+
+            i {
+                margin-left: .2rem;
+                color: $color-light-blue;
+            }
+        }
+    }
+}
+
+.fa-chevron-circle- {
+    &left,
+    &right
+     {
+        color: $color-grey-dark;
+        position: absolute;
+        top: 45%;
+        font-size: 4rem;
+        transition: .3s;
+        cursor: pointer;
+        z-index: 1000;
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+
+        @include respond(phone-horizontal) {
+            font-size: 3rem;
+        }
+
+        &:hover {
+            color: $color-light-blue;
+        }
+    }
+
+    &left {
+        left: 2%;
+    }
+
+    &right {
+        right: 2%;
+    }
+}
+
+.available {
+    color: $color-grey-light;
+    opacity: 1;
+    cursor: pointer;
+}

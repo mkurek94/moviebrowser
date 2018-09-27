@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MovieProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mateusz Kurek">
+    <meta name="description" content="Movie Browser Project">
+    <meta name="keywords" content="MateuszKurek,portfolio,movie,moviedb">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="control-panel">
+            <nav class="navigation-bar">
+                <ul>
+                    <li class="trending" id="popular">Trending Movies</li>
+                    <li class="news" id="now_playing">New Movies</li>
+                    <li class="top" id="top_rated">Top Rated</li>
+                    <li class="upcoming" id="upcoming">Upcoming Movies</li>
+                </ul>
+            </nav>
+            <footer>
+                &copy; by Mateusz Kurek. Powered by
+                    <a href="https://www.themoviedb.org/"><img src="./img/MovieDB.svg"></a>
+            </footer>
+        </div>
+        <main>
+            <header>
+                <h1 class="header">Movie Project</h1>
+                <div class="searchbar">
+                    <input type="text" name="search" placeholder="Find movie..." autocomplete="off" class="search">
+                    <button class="search-btn" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </header>
+            <div class="poster__collection">
+                <div class="nav__arrows">
+                </div>
+                <div class="poster__collection--main">
+                    <div class="welcome">
+                        <img src="./img/poster.jpg" alt="poster" class="welcome__poster">
+                        <div class="welcome__header">
+                            <span class="welcome__header--primary">Movie Browser</span>
+                            <span class="welcome__header--secondary">Because one story is not enough..</span>
+                        </div>
+                        <a href="#" class="welcome__btn">Try it!</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
